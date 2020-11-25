@@ -1,0 +1,836 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;0,900;1,300;1,500;1,600&family=Poppins:wght@600;700&display=swap");
+
+/* Common Css Hear */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Variable  */
+.section-padding {
+  padding: 8rem 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 3.5rem;
+  color: #484848;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+}
+
+p {
+  font-size: 1.6rem;
+  color: #1d1d1d;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+h2 {
+  font-size: 4.5rem;
+  color: #484848;
+  font-family: "Montserrat";
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+/* Creative agency css code here */
+/* main header */
+.header-area {
+  background: url(../image/header-home.jpg) no-repeat scroll 0 0 / cover;
+}
+
+.header-area .row {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f42267;
+  z-index: 99999;
+}
+
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo img {
+  width: 75%;
+  height: 100%;
+}
+
+.logo-bar {
+  display: none;
+}
+
+.logo-bar i {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.menu ul li a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+  padding: 1.5rem 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.menu ul li a:hover {
+  color: #1d1d1d;
+}
+
+/* Midea Quyari  */
+/* .menu ul li a:hover {} */
+.header-text h3 {
+  color: #fff;
+  margin-top: 15rem;
+}
+
+.header-text p {
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+.header-button ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-column-gap: 3rem;
+  -moz-column-gap: 3rem;
+  column-gap: 3rem;
+  padding-bottom: 5rem;
+}
+
+.btnSecondary {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: #f42267;
+  padding: 1.2rem 3rem;
+  border-radius: 2.5rem;
+  border: 2px solid transparent;
+  display: inline-block;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.btnSecondary:hover {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.btnPrimary {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: #773491;
+  padding: 1.2rem 3rem;
+  border-radius: 2.5rem;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border: 2px solid transparent;
+  display: inline-block;
+}
+
+.btnPrimary:hover {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.header-image {
+  height: 50rem;
+  width: 55rem;
+}
+
+.header-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-top: 2.5rem;
+}
+
+/* Creative area */
+.creative-area {
+  background: url(../image/overlay.png) no-repeat scroll 0 0 / cover;
+  padding-top: 8rem;
+}
+
+.creative-button {
+  margin-top: 5rem;
+}
+
+.btn-one {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: #f42267;
+  padding: 1.2rem 2.5rem;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  display: inline-block;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+.btn-one:hover {
+  background: #ff5990;
+}
+
+.btn-one:hover::after {
+  background: #f42267;
+}
+
+.btn-one::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: -2px;
+  background: #ff5990;
+  height: 100%;
+  width: 103%;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.btn-one:hover {
+  color: #fff;
+}
+
+.hero-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hero-menu ul li {
+  margin: 0 0.5rem;
+}
+
+.hero-menu ul li a {
+  background: transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 2.5rem;
+  font-size: 1.3rem;
+  color: #484848;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.hero-menu ul li .active,
+.hero-menu ul li a:hover {
+  background: #f42267;
+  color: #fff;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+  ;
+}
+
+.hero-menu ul li .active:hover {
+  background: transparent;
+  color: #1d1d1d;
+}
+
+.creative-item {
+  height: 45rem;
+  width: 40rem;
+}
+
+.creative-item img {
+  height: 100%;
+  width: 100%;
+}
+
+.creative-counter {
+  background: #4b2d7f;
+}
+
+.crearive-counter-item {
+  padding: 5rem;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.crearive-counter-item:hover {
+  background: #f42267;
+}
+
+.custome-clr {
+  background: #40286a;
+}
+
+.crearive-counter-item i {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.crearive-counter-item h2 {
+  color: #fff;
+}
+
+.crearive-counter-item h4 {
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  color: #fff;
+}
+
+.crearive-counter-item p {
+  color: #fff;
+  padding-top: 1rem;
+}
+
+/* ============grow area =========== */
+.grow-area {
+  background: url(../image/grow.jpg) no-repeat scroll 0 0 / cover;
+  text-align: center;
+  padding: 5rem;
+}
+
+.primary-button {
+  position: relative;
+  z-index: 11;
+}
+
+.grow-content h3 {
+  color: #fff;
+}
+
+.grow-content h2 {
+  color: #fff;
+  padding: 2rem;
+}
+
+.grow-content p {
+  color: #fff;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+/* ============ Idea area =============== */
+.idea-content-item i {
+  font-size: 4rem;
+  color: #770c95;
+}
+
+.idea-skrill {
+  padding-top: 3rem;
+}
+
+.idea-content-item h4 {
+  font-size: 2.2rem;
+  padding: 2rem 0;
+}
+
+.idea-content-item p {
+  padding-bottom: 2rem;
+}
+
+.idea-area .row {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.idea-image {
+  position: relative;
+  text-align: right;
+}
+
+.idea-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.idea-image::before {
+  position: absolute;
+  content: "\f04b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 7rem;
+  text-align: center;
+  width: 7rem;
+  background: #f42267;
+  line-height: 7rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: .4s linear;
+  -o-transition: .4s linear;
+  transition: .4s linear;
+}
+
+.idea-image:hover::before {
+  background: #fff;
+  color: #f42267;
+}
+
+/* ============Work area=============== */
+.work-area {
+  background: #f1f1f1;
+}
+
+.work-area .hero-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 4rem 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+  row-gap: 1rem;
+}
+
+.gelarry-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.gelarry-button {
+  margin-top: 6rem;
+  position: relatabve;
+  z-index: 11;
+}
+
+/* ==========brand-section============ */
+
+.brand-section {
+  background: #4b2d7f;
+}
+
+.brand-item {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* ================Happy clients area============== */
+.client-area {
+  background: url(../image/clients-bg.jpg) no-repeat scroll 0 0 / cover;
+}
+
+.info-text p,
+.client-text h3,
+.client-text h2 {
+  color: #fff;
+}
+
+.info-text h4 {
+  color: #fff;
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-size: 2.2rem;
+}
+
+.client-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.info-Rating ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.info-Rating ul li {
+  margin: 4rem 0.5rem 2rem 0;
+}
+
+.info-Rating ul li i {
+  font-size: 2rem;
+  color: #f42267;
+}
+
+.info-images i {
+  font-size: 4rem;
+  color: #f42267;
+  display: inline-block;
+  margin: -1rem 1rem 0 0;
+}
+
+.info-images {
+  height: 100%;
+  width: 10rem;
+}
+
+/* ===============Contact forem===================== */
+.contact-area {
+  background: url(../image/contact.jpg) no-repeat scroll 0 0 / cover;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.contact h4 {
+  color: #fff;
+  font-size: 2.8rem;
+}
+
+.contact p {
+  color: #fff;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  max-width: 40rem;
+  width: 100%;
+  height: 4rem;
+  padding: 0.5rem 3rem;
+  background: #f66f9b;
+  border: none;
+  border: 1px solid transparent;
+  border-radius: 0.7rem;
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover {
+  border-color: #fff;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus {
+  background: transparent;
+  border-color: #fff;
+}
+
+.contact-form input[type="email"] {
+  margin: 0 1.5rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn-tow {
+  border: none;
+  color: #fff;
+  display: inline-block;
+  background: #4b2d7f;
+  padding: 0.9rem 3rem;
+  border-radius: 0.7rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: -1rem;
+}
+
+.contact-button {
+  position: relative;
+  z-index: 11;
+}
+
+.contact-button::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  height: 125%;
+  width: 100%;
+  background: #a57ee9;
+  border-radius: 0.7rem;
+  top: 0;
+  left: 0;
+}
+
+.client-image img {
+  margin: -7rem 0 -8rem 5rem;
+}
+
+/* Socail area  */
+.socail-area {
+  background: #4b2d7f;
+}
+
+.socail ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.socail ul li {
+  position: relative;
+}
+
+.socail ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1rem 3rem;
+}
+
+.socail ul li::after {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 0.3rem;
+  background: #7647c7;
+}
+
+.socail ul li:last-child::after {
+  display: none;
+}
+
+.socail ul li a:hover {
+  opacity: 0.8;
+}
+
+/* About commpany area css */
+.about-commpany-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about-commpany {
+  background: url(../image/overlay.png) no-repeat scroll 0 0 / cover;
+}
+
+.commpany-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-commpany-text h4 {
+  font-size: 2.2rem;
+  padding: 0 0 1.5rem 0;
+  color: #4b2d7f;
+}
+
+.about-commpany-text ul li {
+  padding: 0.4rem 0;
+}
+
+.about-items {
+  padding: 0 8rem 0 5rem;
+}
+
+.commpany-item {
+  margin-bottom: 5rem;
+}
+
+/*============== Footer area=========== */
+.footer-area {
+  background: #f7f7f7;
+  padding: 5rem 0;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.privacy ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  row-gap: .5rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.privacy ul li {
+  position: relative;
+}
+
+.privacy ul li:before {
+  position: absolute;
+  content: ".";
+  top: -1.3rem;
+  font-size: 2.5rem;
+}
+
+.privacy ul li a {
+  padding: 0 2rem;
+  color: #484848;
+}
